@@ -1,0 +1,25 @@
+[{
+    "bread_name": "croissant",
+    "price": 200,
+    "stock": 10,
+    "reservation": false
+},
+{
+    "bread_name": "cream-filled_roll",
+    "price": 200,
+    "stock": 3,
+    "reservation": false
+},
+{
+    "bread_name": "white_bread",
+    "price": 800,
+    "stock": 20,
+    "reservation": true
+},
+{
+    "bread_name": "anpan",
+    "price": 200,
+    "stock": 0,
+    "reservation": false
+}
+]
