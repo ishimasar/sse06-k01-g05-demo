@@ -3,7 +3,7 @@
 ## 作成プロダクト名: Panget（パンゲット）
 
 * GoogleスライドURL(発表用？): https://docs.google.com/presentation/d/11OtoP1YcJML7eDH0hcr_qscTTvQlvNOuKqOcs9m8yTk/edit?usp=sharing
-* Miro URL: https://miro.com/app/board/uXjVMAJL7tA=/ https://miro.com/app/board/uXjVMB-tnT8=/
+* Miro URL: https://miro.com/app/board/uXjVMAJL7tA=/ 、 https://miro.com/app/board/uXjVMB-tnT8=/
 
 * アプリイメージ
   * <img src="https://github.com/ishimasar/sse06-k01-g05-demo/blob/main/%E5%9C%A8%E5%BA%AB%E4%B8%80%E8%A6%A7.png" width="450">
