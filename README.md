@@ -13,3 +13,4 @@
 
 * パンの在庫判定　-> 写真判定ロジックにより在庫データを書き換え更新する
   * <img width="1216" alt="スクリーンショット 2023-07-01 8 23 57" src="https://github.com/ishimasar/sse06-k01-g05-demo/assets/10381147/23e810a2-096a-4431-bf8f-05d44fe353e7">
+  * <img width="1055" alt="スクリーンショット 2023-07-01 8 52 33" src="https://github.com/ishimasar/sse06-k01-g05-demo/assets/10381147/c60bc1ad-3dd7-4bbc-9dae-2ab566acad5e">
