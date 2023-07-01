@@ -4,3 +4,5 @@ venv/
 
 # output file
 update_stock/result.jpg
+
+__pycache__/
