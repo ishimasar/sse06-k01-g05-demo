@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>パンの在庫管理</title>
+    <title>パンの在庫管理 Panget(パンゲット)</title>
     <style>
       .card-container {
         display: flex;
@@ -51,9 +51,9 @@
         <p>個数: 2</p>
         <p>次回焼き上がり時間: 12:00 PM</p>
         <div class="order-container">
-          <button class="count-button">-</button>
-          <input type="number" class="order-input" value="0">
-          <button class="count-button">+</button>
+          <button class="count-button minus-button">-</button>
+          <input type="number" class="count-input" value="0">
+          <button class="count-button plus-button">+</button>
           <button class="order-button">注文</button>
         </div>
       </div>
@@ -65,9 +65,9 @@
         <p>個数: 1</p>
         <p>次回焼き上がり時間: -</p>
         <div class="order-container">
-          <button class="count-button">-</button>
-          <input type="number" class="order-input" value="0">
-          <button class="count-button">+</button>
+          <button class="count-button minus-button">-</button>
+          <input type="number" class="count-input" value="0">
+          <button class="count-button plus-button">+</button>
           <button class="order-button">注文</button>
         </div>
       </div>
@@ -79,9 +79,9 @@
         <p>個数: 3</p>
         <p>次回焼き上がり時間: 15:30 PM</p>
         <div class="order-container">
-          <button class="count-button">-</button>
-          <input type="number" class="order-input" value="0">
-          <button class="count-button">+</button>
+          <button class="count-button minus-button">-</button>
+          <input type="number" class="count-input" value="0">
+          <button class="count-button plus-button">+</button>
           <button class="order-button">注文</button>
         </div>
       </div>
@@ -93,12 +93,36 @@
         <p>個数: 3</p>
         <p>次回焼き上がり時間: 15:30 PM</p>
         <div class="order-container">
-          <button class="count-button">-</button>
-          <input type="number" class="order-input" value="0">
-          <button class="count-button">+</button>
+          <button class="count-button minus-button">-</button>
+          <input type="number" class="count-input" value="0">
+          <button class="count-button plus-button">+</button>
           <button class="order-button">注文</button>
         </div>
       </div>
     </div>
+
+    <script>
+      const minusButtons = document.querySelectorAll('.minus-button');
+      const plusButtons = document.querySelectorAll('.plus-button');
+      const countInputs = document.querySelectorAll('.count-input');
+
+      for (let i = 0; i < minusButtons.length; i++) {
+        minusButtons[i].addEventListener('click', () => {
+          let countInput = event.target.parentNode.querySelector('.count-input');
+          let count = parseInt(countInput.value);
+          count = count - 1;
+          countInput.value = count >= 0 ? count : 0;
+        });
+      }
+
+      for (let i = 0; i < plusButtons.length; i++) {
+        plusButtons[i].addEventListener('click', () => {
+          let countInput = event.target.parentNode.querySelector('.count-input');
+          let count = parseInt(countInput.value);
+          count = count + 1;
+          countInput.value = count;
+        });
+      }
+    </script>
   </body>
 </html>
