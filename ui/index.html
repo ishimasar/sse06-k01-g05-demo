@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>パンの在庫管理</title>
+    <style>
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: calc(50% - 20px);
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .card img {
+        width: 300px;
+        height: 300px;
+        /* max-height: 200px; */
+        object-fit: contain;
+        border-radius: 4px;
+      }
+
+      .card h2 {
+        margin: 10px 0;
+      }
+
+      .card p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>パンの在庫管理</h1>
+    <img src="bakery.jpg" alt="パン屋さんの写真" style="width: 100%; height: 250px;object-fit: cover;">
+    <div>
+      <h2>ベーカリー・エスイー</h2>
+      <address style="display: inline-block;">東京都新宿区西早稲田123-456</address><span style="background-color: orangered; color: white; border-radius: 5px;">MAP</span>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="../update_stock/template/anpan.jpg" alt="パン1">
+        <h2>パン1</h2>
+        <p>在庫数: 10</p>
+        <p>値段: 100円</p>
+        <p>個数: 2</p>
+        <p>次回焼き上がり時間: 12:00 PM</p>
+        <div class="order-container">
+          <button class="count-button">-</button>
+          <input type="number" class="order-input" value="0">
+          <button class="count-button">+</button>
+          <button class="order-button">注文</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../update_stock/template/cream-filled_roll.jpg" alt="パン2">
+        <h2>パン2</h2>
+        <p>在庫数: 0</p>
+        <p>値段: 150円</p>
+        <p>個数: 1</p>
+        <p>次回焼き上がり時間: -</p>
+        <div class="order-container">
+          <button class="count-button">-</button>
+          <input type="number" class="order-input" value="0">
+          <button class="count-button">+</button>
+          <button class="order-button">注文</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../update_stock/template/croissant.jpg" alt="パン4">
+        <h2>パン3</h2>
+        <p>在庫数: 5</p>
+        <p>値段: 120円</p>
+        <p>個数: 3</p>
+        <p>次回焼き上がり時間: 15:30 PM</p>
+        <div class="order-container">
+          <button class="count-button">-</button>
+          <input type="number" class="order-input" value="0">
+          <button class="count-button">+</button>
+          <button class="order-button">注文</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../update_stock/template/white_bread.jpg" alt="パン3">
+        <h2>パン4</h2>
+        <p>在庫数: 5</p>
+        <p>値段: 120円</p>
+        <p>個数: 3</p>
+        <p>次回焼き上がり時間: 15:30 PM</p>
+        <div class="order-container">
+          <button class="count-button">-</button>
+          <input type="number" class="order-input" value="0">
+          <button class="count-button">+</button>
+          <button class="order-button">注文</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
