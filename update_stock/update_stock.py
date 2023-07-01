@@ -40,7 +40,7 @@ def main():
         
         # 検出結果を描画
         for p in p_list:
-            cv2.rectangle(dst, (p[0], p[1]), (p[0] + template.shape[1], p[1] + template.shape[0]), color=rect_color, thickness=1)
+            cv2.rectangle(dst, (p[0], p[1]), (p[0] + template.shape[1], p[1] + template.shape[0]), color=rect_color, thickness=2)
         
         # jsonに在庫情報を反映
         try:
