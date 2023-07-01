@@ -1,0 +1,6 @@
+# python env
+venv/
+.python-version
+
+# output file
+update_stock/result.jpg
