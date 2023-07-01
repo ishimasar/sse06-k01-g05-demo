@@ -2,7 +2,6 @@ import json
 import cv2
 import numpy as np
 from pathlib import Path
-from matplotlib import pyplot as plt
 
 
 pan_list = [
