@@ -21,9 +21,29 @@ def read_json(path: Path):
     return data
 
 
-if __name__ == '__main__':
+def get_data():
     inventory = read_json(Path('bread_inventory.json'))
     output_text = [add_text(i) for i in inventory]
+    return output_text
+
+
+def get_data_dict():
+    inventory = read_json(Path('bread_inventory.json'))
+    output_text = [add_text(i) for i in inventory]
+
+    output_dict = dict()
+    for output in output_text:
+        output_dict[output['bread_name']] = {
+            'price': output['price'],
+            'stock': output['stock'],
+            'reservation': output['reservation'],
+            'text': output['text']
+        }
+    return output_dict
+
+
+if __name__ == '__main__':
+    output_text = get_data()
 
     for output in output_text:
         print('bread_name: ', output['bread_name'])
